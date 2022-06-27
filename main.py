@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 from windows import *
 
-sg.change_look_and_feel('DarkAmber')
+sg.theme('Topanga')
 
 layout = [
     [sg.Button('Matematika',size=(15,1)), sg.Button('Fyzika',size=(15,1))]
@@ -19,7 +19,7 @@ while True:
     elif event == 'Matematika':
         matematika_menu()
     elif event == 'Fyzika':
-        pass
+        fyzika_menu()
 
 window.close()
 
